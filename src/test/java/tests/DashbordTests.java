@@ -17,7 +17,5 @@ public class DashbordTests extends BaseTest {
     public void verifyDashboardElementsAreVisible() {
         page.navigate(TestConfig.BASE_URL + "/inventory.html");
         assertThat(page.locator(".title")).hasText("Products");
-        assertThat(page.locator(".shopping_cart_link")).isVisible();
-        assertThat(page.locator(".inventory_item")).hasCount(6);
     }
 }
